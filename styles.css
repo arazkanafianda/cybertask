@@ -1,0 +1,59 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background: #f3f6fa;
+    color: #172033;
+    font: 15px Arial, sans-serif;
+}
+
+main { max-width: 1000px; margin: 48px auto; padding: 0 20px; }
+header { margin-bottom: 28px; }
+h1 { margin-bottom: 8px; }
+header p { color: #68758a; }
+
+.card {
+    background: white;
+    border: 1px solid #e1e7ef;
+    border-radius: 12px;
+    padding: 22px;
+    margin-bottom: 22px;
+}
+
+.add-form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr auto;
+    gap: 10px;
+}
+
+input, select, button {
+    min-height: 40px;
+    padding: 9px 11px;
+    border: 1px solid #ccd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+button {
+    background: #155eef;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover { background: #104ac2; }
+.delete { background: #fff0f0; color: #b42318; }
+.delete:hover { background: #ffe0df; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { padding: 12px 10px; border-bottom: 1px solid #edf0f4; text-align: left; }
+th { color: #68758a; font-size: 12px; text-transform: uppercase; }
+.inline-form { display: flex; gap: 6px; }
+.inline-form select, .inline-form button { min-height: 34px; padding: 6px; }
+.empty { padding: 28px; text-align: center; color: #68758a; }
+.table-wrap { overflow-x: auto; }
+
+@media (max-width: 760px) {
+    .add-form { grid-template-columns: 1fr; }
+    table { min-width: 700px; }
+}
